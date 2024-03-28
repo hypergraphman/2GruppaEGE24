@@ -10,7 +10,6 @@ p, n = map(int, f.readline().split())
 for line in f:
     i, mark = map(int, line.split())
     stuffs[i].append(mark * 100)
-print(stuffs)
 for i in stuffs:
     stuffs[i].sort()
     x = int(len(stuffs[i]) * p / 100)
@@ -22,7 +21,6 @@ for i in stuffs:
     else:
         med = stuffs[i][len(stuffs[i]) // 2]
     rating[i].append(abs(rating[i][0] - med))
-print(rating)
 mn = float('inf')
 mx = 0
 mx_i = 0
