@@ -11,4 +11,8 @@ def is_prime(n):
     return len(divs(n)) == 2
 
 
-print(is_prime(1231))
+for i in range(7071, 7107):
+    if is_prime(i):
+        print(2 * i * i, 2 * i)
+# 100224482 14158
+# 100905218 14206
